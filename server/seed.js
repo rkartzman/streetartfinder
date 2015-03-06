@@ -1,9 +1,44 @@
-var user1 = db.users.insert({ username: 'Lucas', password: '123' });
-var user2 = db.users.insert({ username: 'Remy', password: '123' });
-var user3 = db.users.insert({ username: 'Ivan', password: '123' });
-var user4 = db.users.insert({ username: 'David', password: '123' });
+if (Users.find().count() === 0) {
+  Users.insert({
+    name: 'Lucas',
+    password: '123'
+  });
 
-var photo1 = db.photos.insert({ caption: 'SUP', url: 'https://sup.com', coordinates: {lat: '', lng: ''}, user_id: user1._id});
-var photo2 = db.photos.insert({ caption: 'SUP', url: 'https://sup.com', coordinates: {lat: '', lng: ''}, user_id: user2._id});
-var photo3 = db.photos.insert({ caption: 'SUP', url: 'https://sup.com', coordinates: {lat: '', lng: ''}, user_id: user4._id});
-var photo4 = db.photos.insert({ caption: 'SUP', url: 'https://sup.com', coordinates: {lat: '', lng: ''}, user_id: user3._id});
+  Users.insert({
+    name: 'Remy',
+    password: '123'
+  });
+
+  Users.insert({
+    name: 'Ivan',
+    password: '123'
+  });
+}
+
+if (Photos.find().count() === 0) {
+  Photos.insert({
+    caption: 'SUP',
+    url: 'https://sup.com',
+    coordinates: { lat: '', lng: ''},
+    comments: [],
+    user_id: Users.findOne({ name: 'Lucas' })._id
+  });
+
+  Photos.insert({
+    caption: 'bacon',
+    url: 'https://bacon.com',
+    coordinates: { lat: '', lng: ''},
+    comments: [],
+    user_id: Users.findOne({ name: 'Remy' })._id
+  });
+
+  Photos.insert({
+    caption: 'chipotle',
+    url: 'https://chipotle.com',
+    coordinates: { lat: '', lng: ''},
+    comments: [],
+    user_id: Users.findOne({ name: 'Ivan' })._id
+  });
+}
+
+
