@@ -1,10 +1,9 @@
 Template.showMap.rendered = function () {
   (function(window, google){
-
     var options = {
       center: {
-        lat: 37.791350,
-        lng: -122.435883
+        lat: 40.7062502,
+        lng: -74.00926679999999
       },
       zoom: 10,
       disableDefaultUI: true
