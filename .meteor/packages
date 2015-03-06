@@ -9,3 +9,7 @@ autopublish
 insecure
 mdg:camera
 dburles:google-maps
+sacha:spin
+mizzao:bootstrap-3
+iron:router
+mdg:geolocation
