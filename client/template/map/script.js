@@ -1,5 +1,5 @@
 Template.showMap.rendered = function () {
-  (function(window, google){
+  mapster = (function(window, google){
     var options = {
       center: {
         lat: 40.7062502,
@@ -9,8 +9,22 @@ Template.showMap.rendered = function () {
       disableDefaultUI: true
     },
 
-    element = document.getElementById('map-canvas'),
+    element = document.getElementById('map-canvas');
     map = new google.maps.Map(element, options);
 
+
+    function addMarker(lat, lng) {
+      new google.maps.Marker({
+        position: {
+          lat: lat,
+          lng: lng
+        },
+        map: map
+      });
+    };
+
+    return {
+      addMarker: addMarker
+    }
   }(window, google));
 }
