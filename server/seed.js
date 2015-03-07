@@ -23,7 +23,7 @@ if (Users.find().count() === 0) {
 if (Photos.find().count() === 0) {
   Photos.insert({
     caption: 'SUP',
-    url: 'https://sup.com',
+    url: 'http://upload.wikimedia.org/wikipedia/commons/d/d2/Round_Lake_(2)_-_Fayetteville_NY.jpg',
     coordinates: { lat: '40.706249', lng: '-74.00925289999999'},
     comments: [],
     user_id: Users.findOne({ name: 'Lucas' })._id
