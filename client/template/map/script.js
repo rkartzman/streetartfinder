@@ -13,8 +13,9 @@ Template.showMap.rendered = function () {
     map = new google.maps.Map(element, options);
 
 marks = [];
-    function addMarker(lat, lng) {
+    function addMarker(lat, lng, photoId) {
         marks.push(new google.maps.Marker({
+        id: photoId,
         position: {
           lat: lat,
           lng: lng
@@ -24,11 +25,11 @@ marks = [];
     };
     google.maps.event.addListener(map, 'tilesloaded', function(evt) {
       for(var i = 0; i < Photos.find().count(); i++){
-        mapster.addMarker(parseFloat(Photos.find().fetch()[i].coordinates.lat), parseFloat(Photos.find().fetch()[i].coordinates.lng))
+        mapster.addMarker(parseFloat(Photos.find().fetch()[i].coordinates.lat), parseFloat(Photos.find().fetch()[i].coordinates.lng), Photos.find().fetch()[i]._id)
       }
     marks.forEach(function(mark) {
         google.maps.event.addListener(mark,'click',function() {
-        alert("nice click bro");
+        alert(mark.id);
         });
       });
     });
