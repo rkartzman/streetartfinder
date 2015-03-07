@@ -13,3 +13,5 @@ sacha:spin
 mizzao:bootstrap-3
 iron:router
 mdg:geolocation
+cfs:standard-packages
+cfs:filesystem
