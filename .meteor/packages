@@ -17,3 +17,5 @@ cfs:standard-packages
 cfs:filesystem
 accounts-ui
 accounts-password
+peerlibrary:aws-sdk
+

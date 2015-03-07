@@ -26,6 +26,7 @@ if(Meteor.isClient){
       {
           url: "http://s3.amazonaws.com/streetartfinder/" + fileName,
           takenAt: 'abcdefg'
+   
       })
       
 	});
