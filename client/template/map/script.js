@@ -23,6 +23,19 @@ Template.showMap.rendered = function () {
       });
     };
 
+    // console.log(Photos.find().fetch()[i].coordinates.lat)
+    // console.log(Photos.find().fetch()[i].coordinates.lng)
+
+
+    google.maps.event.addListener(map, 'tilesloaded', function(evt) {
+      mapster.addMarker(40.706255299999995, -74.00923720000002)
+
+      for(var i = 0; i < Photos.find().count(); i++){
+        mapster.addMarker(parseFloat(Photos.find().fetch()[i].coordinates.lat), parseFloat(Photos.find().fetch()[i].coordinates.lng))
+      }
+
+    });
+
     return {
       addMarker: addMarker
     }

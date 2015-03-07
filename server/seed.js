@@ -13,13 +13,18 @@ if (Users.find().count() === 0) {
     name: 'Ivan',
     password: '123'
   });
+
+  Users.insert({
+    name: 'Denko',
+    password: '123'
+  });
 }
 
 if (Photos.find().count() === 0) {
   Photos.insert({
     caption: 'SUP',
     url: 'https://sup.com',
-    coordinates: { lat: '', lng: ''},
+    coordinates: { lat: '40.706249', lng: '-74.00925289999999'},
     comments: [],
     user_id: Users.findOne({ name: 'Lucas' })._id
   });
@@ -27,7 +32,7 @@ if (Photos.find().count() === 0) {
   Photos.insert({
     caption: 'bacon',
     url: 'https://bacon.com',
-    coordinates: { lat: '', lng: ''},
+    coordinates: { lat: '41.706249', lng: '-74.00925289999999'},
     comments: [],
     user_id: Users.findOne({ name: 'Remy' })._id
   });
@@ -35,7 +40,7 @@ if (Photos.find().count() === 0) {
   Photos.insert({
     caption: 'chipotle',
     url: 'https://chipotle.com',
-    coordinates: { lat: '', lng: ''},
+    coordinates: { lat: '42.706249', lng: '-74.00925289999999'},
     comments: [],
     user_id: Users.findOne({ name: 'Ivan' })._id
   });
