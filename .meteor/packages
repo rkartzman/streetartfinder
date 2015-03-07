@@ -15,3 +15,5 @@ iron:router
 mdg:geolocation
 cfs:standard-packages
 cfs:filesystem
+accounts-ui
+accounts-password
