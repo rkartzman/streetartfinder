@@ -12,27 +12,30 @@ Template.showMap.rendered = function () {
     element = document.getElementById('map-canvas');
     map = new google.maps.Map(element, options);
 
-
+marks = [];
     function addMarker(lat, lng) {
-      new google.maps.Marker({
+        marks.push(new google.maps.Marker({
         position: {
           lat: lat,
           lng: lng
         },
         map: map
-      });
+      }));
     };
-
     google.maps.event.addListener(map, 'tilesloaded', function(evt) {
-
       for(var i = 0; i < Photos.find().count(); i++){
         mapster.addMarker(parseFloat(Photos.find().fetch()[i].coordinates.lat), parseFloat(Photos.find().fetch()[i].coordinates.lng))
       }
-
+    marks.forEach(function(mark) {
+        google.maps.event.addListener(mark,'click',function() {
+        alert("nice click bro");
+        });
+      });
     });
 
+
     return {
-      addMarker: addMarker
+      addMarker: addMarker,
     }
   }(window, google));
 }
