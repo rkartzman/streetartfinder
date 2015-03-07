@@ -29,7 +29,7 @@ marks = [];
       }
     marks.forEach(function(mark) {
         google.maps.event.addListener(mark,'click',function() {
-        alert(mark.id);
+         Router.go('/photos/' + mark.id);
         });
       });
     });
