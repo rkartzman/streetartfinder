@@ -2,7 +2,15 @@
     return Geolocation.latLng();
   };
 
-  function dataURItoBlob(dataURI) {
+	// if currentPosition
+	// and meteor is client
+	// return {
+	// 	lat: lat,
+	// 	lng: longi
+	// }
+// })();
+
+function dataURItoBlob(dataURI) {
     var binary = atob(dataURI.split(',')[1]);
     var array = [];
     for(var i = 0; i < binary.length; i++) {
@@ -14,6 +22,7 @@
   }
 
 // $(document).on("keypress", "#caption", function(){picCaption = $('#caption').val();})
+}
 
 if(Meteor.isClient){
   Template.takePhoto.events({
