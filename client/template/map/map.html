@@ -1,9 +1,6 @@
 <template name="showMap">
-  {{>loginButtons}}
   <div id="map-canvas">
-
   </div>
-
-  <a href="/camera">Camera</a>
+  <a href="{{ pathFor 'takePhoto' }}">Camera</a>
   <a href="/all">All</a>
 </template>
