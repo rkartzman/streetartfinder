@@ -9,7 +9,7 @@ body {
 }
 
 #map-canvas {
-  height: 525px;
+  height: 400px;
   width: 300px;
 }
 
@@ -17,4 +17,14 @@ body {
   display: block;
   height: 450px;
   width: 300px;
+}
+
+#backimage {
+  background: url("imgs/background.jpg");
+  background-size: cover;
+  padding-top: 375px;
+  padding-bottom: 125px;
+  opacity: .75;
+  height: 450px;
+  width: 450px;
 }
