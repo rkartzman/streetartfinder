@@ -1,16 +1,16 @@
 // currentPosition = (function(){
-	
+
 getCoordinates = function(){
 		return Geolocation.latLng();
 };
 
 
 
-	// if currentPosition 
-	// and meteor is client 
+	// if currentPosition
+	// and meteor is client
 	// return {
-	// 	lat: lat, 
-	// 	lng: longi 
+	// 	lat: lat,
+	// 	lng: longi
 	// }
 // })();
 
@@ -21,7 +21,7 @@ function dataURItoBlob(dataURI) {
         array.push(binary.charCodeAt(i));
     }
     return new Uint8Array(array);
-    
+
     //return new Blob([new Uint8Array(array)], {type: 'image/jpeg'});
 }
 
@@ -33,16 +33,19 @@ if(Meteor.isClient){
       MeteorCamera.getPicture({}, function(error, data){
       Session.set('photo', data);
       var blob = dataURItoBlob(data);
-      var fileName = "new" + ".jpg";
+      var newOne = Photos.insert({});
+      var fileName = newOne + ".jpg";
       Meteor.call("upload_to_s3", fileName, blob);
-      Photos.insert(
-      {
+      Photos.update(
+        {_id: newOne},
+        {
+        $set: {
           url: "http://s3.amazonaws.com/streetartfinder/" + fileName,
-          coordinates: {lat: Geolocation.latLng().lat, 
+          coordinates: {lat: Geolocation.latLng().lat,
           lng: Geolocation.latLng().lng}
-   
-      })
-      
+        }
+      });
+
 	});
     }
   });
