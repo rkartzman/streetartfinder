@@ -12,8 +12,8 @@
 
     //return new Blob([new Uint8Array(array)], {type: 'image/jpeg'});
   }
-
-// $(document).on("keypress", "#caption", function(){picCaption = $('#caption').val();})
+// var promise = getCoordinates();
+// promise.done(function(data){
 
 if(Meteor.isClient){
   Template.takePhoto.events({
@@ -24,14 +24,13 @@ if(Meteor.isClient){
         var newOne = Photos.insert({});
         var fileName = newOne + ".jpg";
         Meteor.call("upload_to_s3", fileName, blob);
-        Photos.update(
+          Photos.update(
           {_id: newOne},
           {
             $set: {
               url: "http://s3.amazonaws.com/streetartfinder/" + fileName,
               coordinates: {lat: Geolocation.latLng().lat,
-                lng: Geolocation.latLng().lng,
-        // caption: picCaption
+                lng: Geolocation.latLng().lng
       }
     }
   });
