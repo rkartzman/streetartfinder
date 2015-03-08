@@ -12,3 +12,9 @@ body {
   height: 500px;
   width: 500px;
 }
+
+.each-photo {
+  display: block;
+  height: 750px;
+  width: 500px;
+}

@@ -31,7 +31,7 @@ if (Photos.find().count() === 0) {
 
   Photos.insert({
     caption: 'bacon',
-    url: 'https://bacon.com',
+    url: 'http://www.sunsetcove-resort.com/images/08/sunset-loons.jpg',
     coordinates: { lat: '41.706249', lng: '-74.00925289999999'},
     comments: []
     // user_id: Users.findOne({ name: 'Remy' })._id
@@ -39,7 +39,7 @@ if (Photos.find().count() === 0) {
 
   Photos.insert({
     caption: 'chipotle',
-    url: 'https://chipotle.com',
+    url: 'http://images.boomsbeat.com/data/images/full/1246/36-jpg.jpg',
     coordinates: { lat: '42.706249', lng: '-74.00925289999999'},
     comments: []
     // user_id: Users.findOne({ name: 'Ivan' })._id
