@@ -2,19 +2,18 @@
     return Geolocation.latLng();
   };
 
-function dataURItoBlob(dataURI) {
-  var binary = atob(dataURI.split(',')[1]);
-  var array = [];
-  for(var i = 0; i < binary.length; i++) {
-    array.push(binary.charCodeAt(i));
-  }
-  return new Uint8Array(array);
+  function dataURItoBlob(dataURI) {
+    var binary = atob(dataURI.split(',')[1]);
+    var array = [];
+    for(var i = 0; i < binary.length; i++) {
+      array.push(binary.charCodeAt(i));
+    }
+    return new Uint8Array(array);
 
     //return new Blob([new Uint8Array(array)], {type: 'image/jpeg'});
   }
 
 // $(document).on("keypress", "#caption", function(){picCaption = $('#caption').val();})
-
 
 if(Meteor.isClient){
   Template.takePhoto.events({
@@ -36,10 +35,10 @@ if(Meteor.isClient){
       }
     }
   });
+        Router.go('photoPage', {_id: newOne})
+
 
       });
     }
   });
 }
-
-
