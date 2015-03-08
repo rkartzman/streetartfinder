@@ -2,14 +2,6 @@
     return Geolocation.latLng();
   };
 
-	// if currentPosition
-	// and meteor is client
-	// return {
-	// 	lat: lat,
-	// 	lng: longi
-	// }
-// })();
-
 function dataURItoBlob(dataURI) {
     var binary = atob(dataURI.split(',')[1]);
     var array = [];
@@ -17,11 +9,6 @@ function dataURItoBlob(dataURI) {
       array.push(binary.charCodeAt(i));
     }
     return new Uint8Array(array);
-
-    //return new Blob([new Uint8Array(array)], {type: 'image/jpeg'});
-  }
-
-// $(document).on("keypress", "#caption", function(){picCaption = $('#caption').val();})
 }
 
 if(Meteor.isClient){
