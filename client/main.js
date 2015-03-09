@@ -34,7 +34,9 @@ if(Meteor.isClient){
               upvotes: 0,
               downvotes: 0,
               usersVotedUp: [],
-              usersVotedDown: [] }
+              usersVotedDown: [],
+              comments: []
+               }
           });
         Router.go('photoPage', {_id: newOne})
       });
