@@ -33,8 +33,6 @@ Template.showMap.rendered = function () {
       for(var i = 0; i < Photos.find().count(); i++){
         mapster.addMarker(parseFloat(Photos.find().fetch()[i].coordinates.lat), parseFloat(Photos.find().fetch()[i].coordinates.lng), Photos.find().fetch()[i]._id)
       }
-
-    console.log(marks)
     var mapClusterer = new MarkerClusterer(map, marks, mcOptions)
     marks.forEach(function(mark) {
         google.maps.event.addListener(mark,'click',function() {
