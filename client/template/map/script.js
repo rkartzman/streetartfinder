@@ -12,9 +12,9 @@ Template.showMap.rendered = function () {
     element = document.getElementById('map-canvas');
     map = new google.maps.Map(element, options);
 
-marks = [];
+    marks = [];
     function addMarker(lat, lng, photoId) {
-        marks.push(new google.maps.Marker({
+        mark = (new google.maps.Marker({
         id: photoId,
         position: {
           lat: lat,
@@ -22,11 +22,18 @@ marks = [];
         },
         map: map
       }));
+        if($.inArray(mark, marks) === -1 ) {
+          marks.push(mark)
+        } else {
+          return
+        }
     };
-    google.maps.event.addListener(map, 'tilesloaded', function(evt) {
+    var mcOptions = {gridSize: 50, maxZoom: 12};
+    google.maps.event.addListenerOnce(map, 'tilesloaded', function(evt) {
       for(var i = 0; i < Photos.find().count(); i++){
         mapster.addMarker(parseFloat(Photos.find().fetch()[i].coordinates.lat), parseFloat(Photos.find().fetch()[i].coordinates.lng), Photos.find().fetch()[i]._id)
       }
+    var mapClusterer = new MarkerClusterer(map, marks, mcOptions)
     marks.forEach(function(mark) {
         google.maps.event.addListener(mark,'click',function() {
          Router.go('/photos/' + mark.id);
@@ -36,7 +43,7 @@ marks = [];
 
 
     return {
-      addMarker: addMarker,
+      addMarker: addMarker
     }
   }(window, google));
 }
