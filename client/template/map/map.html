@@ -1,9 +1,47 @@
 <template name="showMap">
-  {{>loginButtons}}
-  <div id="map-canvas">
-
+  <div id="main_visual_links">
+    <table>
+      <tr>
+        <td>
+          <div id="blog" class="main_visual_links">
+            <a href="/">
+              <img class="main_link_img" src="imgs/icon_25714.png">
+            </a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="top-needed">
+          <div id="blog" class="main_visual_links">
+            <a href="/">
+              <img class="main_link_img" src="imgs/icon_25714.png">
+            </a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="top-needed">
+          <div id="blog" class="main_visual_links">
+            <a href="/">
+              <img class="main_link_img" src="imgs/icon_25714.png">
+            </a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="top-needed">
+          <div id="blog" class="main_visual_links">
+            <a href="/">
+              <img class="main_link_img" src="imgs/icon_25714.png">
+            </a>
+          </div>
+        </td>
+      </tr>
+    </table>
   </div>
 
-  <a href="/camera">Camera</a>
+  <div id="map-canvas">
+  </div>
+  <a href="{{ pathFor 'takePhoto' }}">Camera</a>
   <a href="/all">All</a>
 </template>

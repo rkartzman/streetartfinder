@@ -9,7 +9,7 @@ body {
 }
 
 #map-canvas {
-  height: 525px;
+  height: 400px;
   width: 300px;
 }
 
@@ -17,4 +17,52 @@ body {
   display: block;
   height: 450px;
   width: 300px;
+}
+
+#backimage {
+  padding-top: 105px;
+  padding-right: 125px;
+  margin-left: -85px;
+  margin-top: 20px;
+  background: url("imgs/touched-background.jpg");
+  background-size: cover;
+  height: 450px;
+  width: 305px;
+  position: left;
+}
+
+#login-buttons {
+  position: fixed;
+  top: 0;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+#login-sign-in-link {
+  color: blue;
+  text-decoration: none;
+}
+
+div#login-buttons {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#main_visual_links {
+  position: fixed;
+  z-index: 5;
+  background-color: rgb(90, 90, 90);
+  opacity: .95;
+  width: 110px;
+  height: 568px;
+}
+
+table td {
+  width: 110px;
+  height: 135px;
+  text-align: center;
+}
+
+table .top-needed {
+  border-top: 3px solid green;
 }
