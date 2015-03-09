@@ -55,6 +55,7 @@ div#login-buttons {
   opacity: .95;
   width: 110px;
   height: 568px;
+  display: none;
 }
 
 table td {
@@ -65,4 +66,14 @@ table td {
 
 table .top-needed {
   border-top: 3px solid green;
+}
+
+.toggle-menu {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  z-index: 8;
+  padding-top: 15px;
+  padding-left: 200px;
+  opacity: .75;
 }
