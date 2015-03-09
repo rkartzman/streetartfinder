@@ -86,3 +86,25 @@ table .top-needed {
   padding-left: 200px;
   opacity: .75;
 }
+
+
+#mostRecentPhoto {
+  height: 100px;
+  width: 100px;
+}
+
+.eachPhotoBelt {
+  /* display: inline; */
+  height: 20px;
+  width: 100px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border: .5px solid black;
+  white-space: nowrap;
+}
+
+.allPhotos {
+  width: 20px;
+  height: 20px;
+  white-space: nowrap;
+}
