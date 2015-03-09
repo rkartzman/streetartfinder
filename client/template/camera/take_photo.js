@@ -4,6 +4,8 @@ Template.takePhoto.helpers({
   }
 });
 
+Geolocation.latLng();
+
 if (Meteor.isClient) {
   Template.takePhoto.events({
     'click .capture': function () {
