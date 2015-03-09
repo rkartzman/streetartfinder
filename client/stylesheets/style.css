@@ -89,14 +89,14 @@ table .top-needed {
 
 
 #mostRecentPhoto {
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 305px;
 }
 
 .eachPhotoBelt {
   /* display: inline; */
-  height: 20px;
-  width: 100px;
+  height: 80px;
+  width: 305px;
   overflow-x: auto;
   overflow-y: hidden;
   border: .5px solid black;
@@ -104,7 +104,7 @@ table .top-needed {
 }
 
 .allPhotos {
-  width: 20px;
-  height: 20px;
+  width: 60px;
+  height: 60px;
   white-space: nowrap;
 }
