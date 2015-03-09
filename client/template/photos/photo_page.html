@@ -1,17 +1,14 @@
 <template name="photoPage">
-  <a href="/map">Map</a>
-  <a href="/all">All</a>
   <img class="each-photo" src="{{url}}">
   {{#if caption}}
     {{caption}}
   {{else}}
-    <form id="add_caption">
-      <input type="text" name="caption" placeholder="Add a caption">
-      <input type="hidden" name="photoId" value={{_id}}>
-      <input type="submit">
-    </form>
+    {{> getCaption}}
   {{/if}}
 {{getVotes}}
 {{> upvoteForm}}
 {{> downvoteForm}}
+{{> comments}}
+<a href="/map"><h1>Map</h1></a>
+<a href="/all"><h1>All</h1></a>
 </template>
