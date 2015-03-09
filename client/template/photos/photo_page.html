@@ -1,6 +1,4 @@
 <template name="photoPage">
-  <a href="/map">Map</a>
-  <a href="/all">All</a>
   <img class="each-photo" src="{{url}}">
   {{#if caption}}
     {{caption}}
@@ -14,4 +12,16 @@
 {{getVotes}}
 {{> upvoteForm}}
 {{> downvoteForm}}
+    <form id="add_comment">
+      <input type="text" name="comment" placeholder="Add a comment">
+      <input type="hidden" name="photoId" value={{_id}}>
+      <input type="submit">
+    </form>
+    {{#each photoComments}}
+      {{#each comments}}
+        {{content}}
+      {{/each}}
+    {{/each }}
+<a href="/map"><h1>Map</h1></a>
+<a href="/all"><h1>All</h1></a>
 </template>
