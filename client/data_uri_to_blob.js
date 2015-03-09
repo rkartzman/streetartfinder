@@ -1,4 +1,4 @@
-function dataURItoBlob(dataURI) {
+dataURItoBlob = function (dataURI) {
   var i;
   var binary = atob(dataURI.split(',')[1]);
   var array = [];
