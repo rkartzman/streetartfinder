@@ -5,7 +5,7 @@
       <tr>
         <td>
           <div id="blog" class="main_visual_links">
-            <a href="/">
+            <a href="/all">
               <img class="main_link_img" src="imgs/globe_64.png">
             </a>
           </div>
@@ -23,7 +23,7 @@
       <tr>
         <td class="top-needed">
           <div id="blog" class="main_visual_links">
-            <a href="/">
+            <a href="{{pathFor 'userProfile' _id='{{Meteor.user()._id}}' }}">
               <img class="main_link_img" src="imgs/man_64.png">
             </a>
           </div>
@@ -32,7 +32,7 @@
       <tr>
         <td class="top-needed">
           <div id="blog" class="main_visual_links">
-            <a href="/">
+            <a href="/camera">
               <img class="main_link_img" src="imgs/photo_64.png">
             </a>
           </div>
@@ -43,6 +43,4 @@
 
   <div id="map-canvas">
   </div>
-  <a href="{{ pathFor 'takePhoto' }}">Camera</a>
-  <a href="/all">All</a>
 </template>

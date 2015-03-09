@@ -9,8 +9,8 @@ body {
 }
 
 #map-canvas {
-  height: 400px;
-  width: 300px;
+  height: 573px;
+  width: 325px;
 }
 
 .each-photo {
@@ -29,6 +29,15 @@ body {
   height: 450px;
   width: 305px;
   position: left;
+}
+
+#our-logo {
+  z-index: 5;
+  position: relative;
+  bottom: 60px;
+  background: url("imgs/newlogo.png");
+  height: 58.5px;
+  width: 150px;
 }
 
 #login-buttons {
