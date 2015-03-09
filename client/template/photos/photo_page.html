@@ -3,25 +3,12 @@
   {{#if caption}}
     {{caption}}
   {{else}}
-    <form id="add_caption">
-      <input type="text" name="caption" placeholder="Add a caption">
-      <input type="hidden" name="photoId" value={{_id}}>
-      <input type="submit">
-    </form>
+    {{> getCaption}}
   {{/if}}
 {{getVotes}}
 {{> upvoteForm}}
 {{> downvoteForm}}
-    <form id="add_comment">
-      <input type="text" name="comment" placeholder="Add a comment">
-      <input type="hidden" name="photoId" value={{_id}}>
-      <input type="submit">
-    </form>
-    {{#each photoComments}}
-      {{#each comments}}
-        {{content}}
-      {{/each}}
-    {{/each }}
+{{> comments}}
 <a href="/map"><h1>Map</h1></a>
 <a href="/all"><h1>All</h1></a>
 </template>
