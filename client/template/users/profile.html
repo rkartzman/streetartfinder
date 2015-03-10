@@ -1,5 +1,8 @@
 <template name="userProfile">
-{{#each userPhotos }}
-	{{>photoPage}}	
-{{/each}}
+  <a id="delete-account" href="/">delete account</a>
+  <a id="logout" href="/">logout</a>
+
+  {{#each userPhotos }}
+    {{>photoPage}} delete?
+  {{/each}}
 </template>
