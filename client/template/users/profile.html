@@ -1,7 +1,9 @@
 <template name="userProfile">
   <a id="delete-account" href="/">delete account</a>
   <a id="logout" href="/">logout</a>
-
+  <div>
+  	<h2>Welcome, {{username}}</h2>
+  </div>
   {{#each userPhotos }}
     {{>photoPage}} delete?
   {{/each}}
