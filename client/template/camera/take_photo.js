@@ -28,7 +28,8 @@ if (Meteor.isClient) {
             downvotes: 0,
             usersVotedUp: [],
             usersVotedDown: [],
-            comments: []
+            comments: [],
+            user_id: Meteor.user()._id
           }
         });
         Router.go('photoPage', {_id: newOne});
