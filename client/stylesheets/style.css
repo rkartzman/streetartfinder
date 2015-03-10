@@ -170,11 +170,11 @@ table .top-needed {
   z-index: 0;
 }
 
-.icon-bar {
+/*.icon-bar {
   position: fixed;
   bottom: 0;
   z-index: 9;
-}
+}*/
 
 .button {
   background-color: #333333;
