@@ -1,3 +1,4 @@
+
 var mapster, map, marks, mark;
 Template.showMap.rendered = function () {
   mapster = (function (window, google) {
@@ -9,7 +10,6 @@ Template.showMap.rendered = function () {
       zoom: 10,
       disableDefaultUI: true
     },
-
       element = document.getElementById('map-canvas');
     map = new google.maps.Map(element, options);
 
