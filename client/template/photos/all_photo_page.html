@@ -1,8 +1,8 @@
 <template name="allPhotoPage">
-  <div class="icon-bar two-up">
-    <a class="item" href="/camera">Camera</a>
-    <a class="item" href="/map">Map</a>
-  </div>
+  <!-- <div class="icon-bar two-up"> -->
+
+    <a class="button tiny" href="/map">Back</a>
+  <!-- </div> -->
 
   <div class="row">
     <div class="small-12 columns">
@@ -14,10 +14,12 @@
 
  <div class="photo-belt-main">
   <div class="row">
-    <div class="eachPhotoBelt">
-      {{#each photos}}
+    <div class="photo-belt-container">
+      <div class="eachPhotoBelt">
+        {{#each photos}}
         {{>photoBelt}}
-      {{/each}}
+        {{/each}}
+      </div>
     </div>
   </div>
 </div>

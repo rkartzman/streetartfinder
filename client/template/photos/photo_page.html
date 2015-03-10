@@ -1,10 +1,15 @@
 <template name="photoPage">
-  <a href="/map">Map</a>
-  <a href="/all">All</a>
-  <a href="/following">Good Art.</a>
-  <img class="each-photo" src="{{url}}">
+  <a class="button tiny" href="/all">Back</a>
+  <!-- <a href="/following">Good Art.</a> -->
+  <div class="row">
+    <div class="small-12 columns">
+      <div id="mostRecentDiv">
+    <img class="each-photo" src="{{url}}">
+  </div>
+</div>
+</div>
   {{#if caption}}
-    {{caption}}
+  <span class="secondary radius label">{{caption}}</span>
   {{else}}
     {{> getCaption}}
   {{/if}}
@@ -12,6 +17,4 @@
 {{> upvoteForm}}
 {{> downvoteForm}}
 {{> comments}}
-<a href="/map"><h1>Map</h1></a>
-<a href="/all"><h1>All</h1></a>
 </template>

@@ -9,10 +9,10 @@ body {
 }*/
 
 #map-canvas {
-  margin-top: -8px;
+  margin-top: -1px;
   border: 2px solid #007F7F;
   border-radius: 5px;
-  height: 800px;
+  height: 695px;
   max-width: 100%;
 }
 
@@ -114,6 +114,7 @@ table .top-needed {
   margin-right: auto;
   width: 100%;
   height: auto;
+  margin-top: 5%;
 }
 
 .eachPhotoBelt {
@@ -123,6 +124,10 @@ table .top-needed {
   /*overflow-y: hidden;*/
   /*border: .5px solid black;*/
   white-space: nowrap;
+  padding-top: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 6px;
 }
 
 
@@ -132,6 +137,7 @@ table .top-needed {
   display:block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5%;
 }
 
 .photo-belt-main {
@@ -139,12 +145,46 @@ table .top-needed {
   overflow-y: hidden;
   max-height: 200px;
   position: fixed;
-    bottom: 0;
-    width: 100%;
+  bottom: 0;
+  width: 100%;
 }
 
 .thumbnails {
   display: inline-block;
   max-height: 200px;
   width: auto;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.photo-belt-container {
+  background-color: black;
+  border-radius: 4px;
+  background: url("http://homesforunwantedgreyhounds.ie/wp-content/uploads/2014/03/dark-grey-background-texture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: 100% !important;
+  z-index: 0;
+}
+
+.icon-bar {
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
+}
+
+.button {
+  background-color: #333333;
+}
+
+.each-photo {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
 }
