@@ -32,12 +32,26 @@ if (Photos.find().count() === 0) {
   Photos.insert({
     caption: 'bacon',
     url: 'http://www.sunsetcove-resort.com/images/08/sunset-loons.jpg',
+    coordinates: { lat: '43.706249', lng: '-74.00925289999999'},
+    comments: [],
+    upvotes: 0,
+    downvotes: 0,
+    usersVotedUp: [],
+    usersVotedDown: [],
+    seen: []
+    // user_id: Users.findOne({ name: 'Remy' })._id
+  });
+
+  Photos.insert({
+    caption: 'bacon',
+    url: 'http://www.sunsetcove-resort.com/images/08/sunset-loons.jpg',
     coordinates: { lat: '41.706249', lng: '-74.00925289999999'},
     comments: [],
     upvotes: 0,
     downvotes: 0,
     usersVotedUp: [],
-    usersVotedDown: []
+    usersVotedDown: [],
+    seen: []
     // user_id: Users.findOne({ name: 'Remy' })._id
   });
 
@@ -49,7 +63,7 @@ if (Photos.find().count() === 0) {
     upvotes: 0,
     downvotes: 0,
     usersVotedUp: [],
-    usersVotedDown: []
+    usersVotedDown: [],
     // user_id: Users.findOne({ name: 'Ivan' })._id
   });
 
@@ -61,7 +75,8 @@ if (Photos.find().count() === 0) {
     upvotes: 0,
     downvotes: 0,
     usersVotedUp: [],
-    usersVotedDown: []
+    usersVotedDown: [],
+      seen: []
   });
 
     Photos.insert({
@@ -72,6 +87,7 @@ if (Photos.find().count() === 0) {
     upvotes: 0,
     downvotes: 0,
     usersVotedUp: [],
+      seen: []
   });
 
     Photos.insert({
@@ -82,7 +98,8 @@ if (Photos.find().count() === 0) {
     upvotes: 0,
     downvotes: 0,
     usersVotedUp: [],
-    usersVotedDown: []
+    usersVotedDown: [],
+      seen: []
     // user_id: Users.findOne({ name: 'Ivan' })._id
   });
 
@@ -94,7 +111,8 @@ if (Photos.find().count() === 0) {
     upvotes: 0,
     downvotes: 0,
     usersVotedUp: [],
-    usersVotedDown: []
+    usersVotedDown: [],
+      seen: []
   });
 
     Photos.insert({
@@ -105,6 +123,7 @@ if (Photos.find().count() === 0) {
     upvotes: 0,
     downvotes: 0,
     usersVotedUp: [],
+      seen: []
   });
 
       Photos.insert({
@@ -115,6 +134,7 @@ if (Photos.find().count() === 0) {
     upvotes: 0,
     downvotes: 0,
     usersVotedUp: [],
+      seen: []
   });
 
     Photos.insert({
@@ -125,7 +145,8 @@ if (Photos.find().count() === 0) {
     upvotes: 0,
     downvotes: 0,
     usersVotedUp: [],
-    usersVotedDown: []
+    usersVotedDown: [],
+      seen: []
     // user_id: Users.findOne({ name: 'Ivan' })._id
   });
 
@@ -137,7 +158,8 @@ if (Photos.find().count() === 0) {
     upvotes: 0,
     downvotes: 0,
     usersVotedUp: [],
-    usersVotedDown: []
+    usersVotedDown: [],
+      seen: []
   });
 
     Photos.insert({
@@ -148,6 +170,7 @@ if (Photos.find().count() === 0) {
     upvotes: 0,
     downvotes: 0,
     usersVotedUp: [],
+      seen: []
   });
 
        Photos.insert({
@@ -158,6 +181,7 @@ if (Photos.find().count() === 0) {
     upvotes: 0,
     downvotes: 0,
     usersVotedUp: [],
+      seen: []
   });
 
       Photos.insert({
@@ -168,6 +192,7 @@ if (Photos.find().count() === 0) {
     upvotes: 0,
     downvotes: 0,
     usersVotedUp: [],
+    seen: []
   });
 
     Photos.insert({
@@ -178,7 +203,8 @@ if (Photos.find().count() === 0) {
     upvotes: 0,
     downvotes: 0,
     usersVotedUp: [],
-    usersVotedDown: []
+    usersVotedDown: [],
+    seen: []
     // user_id: Users.findOne({ name: 'Ivan' })._id
   });
 
@@ -190,7 +216,8 @@ if (Photos.find().count() === 0) {
     upvotes: 0,
     downvotes: 0,
     usersVotedUp: [],
-    usersVotedDown: []
+    usersVotedDown: [],
+    seen: []
   });
 
     Photos.insert({
@@ -201,6 +228,7 @@ if (Photos.find().count() === 0) {
     upvotes: 0,
     downvotes: 0,
     usersVotedUp: [],
+    seen: []
   });
 }
 
