@@ -1,16 +1,38 @@
+// var queryString = window.location.search.substring(1)
+
+// function parseForCoords(queryString){
+//   var coords = queryString.split("&")
+//   return coords.map(function(coord){
+//     return parseFloat(coord.match(/(\-)?\d+\.\d+/))
+//   })
+// }
 
 var mapster, map, marks, mark;
 Template.showMap.rendered = function () {
+  var lat = parseFloat(this.data.lat) 
+  var lng = parseFloat(this.data.lng)
   mapster = (function (window, google) {
-    var options = {
-      center: {
-        lat: 40.7062502,
-        lng: -74.00926679999999
-      },
-      zoom: 10,
-      disableDefaultUI: true
-    },
-      element = document.getElementById('map-canvas');
+    if (lat && lng){
+      var options = {
+        center: {
+          lat: lat,
+          lng: lng
+        },
+        zoom: 14,
+        disableDefaultUI: true
+      };
+    } else {
+      var options = {
+        center: {
+          lat: 40.7062502,
+          lng: -74.00926679999999
+        },
+        zoom: 14,
+        disableDefaultUI: true
+      };
+    }
+
+    element = document.getElementById('map-canvas');
     map = new google.maps.Map(element, options);
 
     marks = [];
@@ -30,6 +52,7 @@ Template.showMap.rendered = function () {
         return;
       }
     };
+
     var mcOptions = {gridSize: 50, maxZoom: 12};
     google.maps.event.addListenerOnce(map, 'tilesloaded', function (evt) {
       var i;
@@ -43,8 +66,6 @@ Template.showMap.rendered = function () {
         });
       });
     });
-
-
     return {
       addMarker: addMarker
     };
