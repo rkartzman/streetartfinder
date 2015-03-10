@@ -2,7 +2,12 @@
   <a href="/map">Map</a>
   <a href="/camera">Camera</a>
   <br>
+  <div id="mostRecentDiv">
+  	<a href="/photos/{{lastPhoto._id}}"><img src="{{lastPhoto.url}}"></a> 
+  	</div>
+ <div class="eachPhotoBelt">
   {{#each photos}}
-    {{> photoPage}}
+  	{{>photoBelt}}
   {{/each}}
+ </div>
 </template>
