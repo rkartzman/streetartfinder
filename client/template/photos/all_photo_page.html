@@ -3,12 +3,10 @@
   <a href="/camera">Camera</a>
   <br>
   <div id="mostRecentDiv">
-  	<h1>Most Recent</h1>
-  	<a href="/photos/{{lastPhoto._id}}"><img id="mostRecentPhoto" src="{{lastPhoto.url}}"></a> 
-  </div>
-<div class="eachPhotoBelt">
+  	<a href="/photos/{{lastPhoto._id}}"><img src="{{lastPhoto.url}}"></a> 
+  	</div>
+ <div class="eachPhotoBelt">
   {{#each photos}}
-    <!-- {{> photoPage}} -->
   	{{>photoBelt}}
   {{/each}}
  </div>

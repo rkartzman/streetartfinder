@@ -88,13 +88,12 @@ table .top-needed {
 }
 
 
-#mostRecentPhoto {
-  height: 200px;
-  width: 305px;
+#mostRecentDiv img {
+  height: 100px;
+  width: 100px;
 }
 
 .eachPhotoBelt {
-  /* display: inline; */
   height: 80px;
   width: 305px;
   overflow-x: auto;
