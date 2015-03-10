@@ -7,7 +7,6 @@ Template.photoPage.helpers({
 Template.photoPage.events({
     'click #been-there': function(event){
       event.preventDefault();
-      console.log(event.target);
       var photoId = this._id;
       Photos.update({_id: photoId}, {
         $addToSet: {
