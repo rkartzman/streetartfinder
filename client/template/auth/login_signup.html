@@ -1,11 +1,14 @@
-  <template name='loginSignup'>
-    <div class="logo-container">
-      <div id="backimage">
-      </div>
-      <img id="our-logo" src="imgs/newlogo.png">
+<template name='loginSignup'>
+  <div class="logo-container">
+      <!-- <div id="backimage">
+    </div> -->
+    <!-- <img id="our-logo" src="imgs/newlogo.png"> -->
+  </div>
+  <!-- <div id="login-buttons"> -->
+    <div class="icon-bar two-up">
+      <a class="item">
+        <label>{{>loginButtons}}</label>
+      </a>
+      <a class="item" href="/map">Map</a>
     </div>
-      <div id="login-buttons">
-        <a href="/map">Map</a>
-        {{>loginButtons}}
-      </div>
   </template>

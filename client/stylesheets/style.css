@@ -1,4 +1,4 @@
-html {
+/*html {
   height: 100%;
 }
 
@@ -6,31 +6,45 @@ body {
   height: 100%;
   padding:0;
   margin: 0;
-}
+}*/
 
 #map-canvas {
-  height: 573px;
-  width: 325px;
+  margin-top: -1px;
+  border: 2px solid #007F7F;
+  border-radius: 5px;
+  height: 695px;
+  max-width: 100%;
 }
 
+/*
 .each-photo {
   display: block;
   height: 450px;
   width: 300px;
 }
+*/
 
-#backimage {
-  padding-top: 105px;
+body {
+  /*padding-top: 105px;
   padding-right: 125px;
   margin-left: -85px;
-  margin-top: 20px;
-  background: url("imgs/touched-background.jpg");
+  margin-top: 20px;*/
+  background: url("https://fc07.deviantart.net/fs38/i/2009/003/f/1/Banksy___girl_and_balloon_by_picture_frame.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: 100% !important;
+  z-index: 0;
+  /*background-size: cover;
   height: 450px;
   width: 305px;
-  position: left;
+  position: left;*/
 }
 
+
+/*
 #our-logo {
   z-index: 5;
   position: relative;
@@ -86,24 +100,91 @@ table .top-needed {
   padding-left: 200px;
   opacity: .75;
 }
+*/
 
 
 #mostRecentDiv img {
-  height: 100px;
-  width: 100px;
+  max-height: 450px;
+  /*width: 50%;*/
+}
+
+.main-preview {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
 }
 
 .eachPhotoBelt {
-  height: 80px;
-  width: 305px;
+  /*height: 80px;*/
+  /*width: 305px;*/
   overflow-x: auto;
-  overflow-y: hidden;
-  border: .5px solid black;
+  /*overflow-y: hidden;*/
+  /*border: .5px solid black;*/
   white-space: nowrap;
+  padding-top: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 6px;
 }
 
+
 .allPhotos {
-  width: 60px;
-  height: 60px;
-  white-space: nowrap;
+  max-height: 100px;
+  /*white-space: nowrap;*/
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+.photo-belt-main {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  max-height: 200px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.thumbnails {
+  display: inline-block;
+  max-height: 200px;
+  width: auto;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.photo-belt-container {
+  background-color: black;
+  border-radius: 4px;
+  background: url("http://homesforunwantedgreyhounds.ie/wp-content/uploads/2014/03/dark-grey-background-texture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: 100% !important;
+  z-index: 0;
+}
+
+/*.icon-bar {
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
+}*/
+
+.button {
+  background-color: #333333;
+}
+
+.each-photo {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
 }
