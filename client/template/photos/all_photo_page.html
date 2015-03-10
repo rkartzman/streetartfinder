@@ -1,13 +1,24 @@
 <template name="allPhotoPage">
-  <a href="/map">Map</a>
-  <a href="/camera">Camera</a>
-  <br>
-  <div id="mostRecentDiv">
-  	<a href="/photos/{{lastPhoto._id}}"><img src="{{lastPhoto.url}}"></a> 
-  	</div>
- <div class="eachPhotoBelt">
-  {{#each photos}}
-  	{{>photoBelt}}
-  {{/each}}
+  <div class="icon-bar two-up">
+    <a class="item" href="/camera">Camera</a>
+    <a class="item" href="/map">Map</a>
+  </div>
+
+  <div class="row">
+    <div class="small-12 columns">
+      <div id="mostRecentDiv">
+       <a href="/photos/{{lastPhoto._id}}"><img src="{{lastPhoto.url}}" class="main-preview"></a>
+     </div>
+   </div>
  </div>
+
+ <div class="photo-belt-main">
+  <div class="row">
+    <div class="eachPhotoBelt">
+      {{#each photos}}
+        {{>photoBelt}}
+      {{/each}}
+    </div>
+  </div>
+</div>
 </template>
