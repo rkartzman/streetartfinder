@@ -20,8 +20,8 @@ Template.userProfile.events({
 });
 
 Template.userProfile.helpers({
-  username: function () {
-    return Meteor.user().emails[0].address;
+  username: function(){
+    return (Meteor.user().emails[0].address).substring(0, (Meteor.user().emails[0].address).indexOf("@"))
   }
 });
 
