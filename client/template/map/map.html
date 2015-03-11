@@ -1,22 +1,22 @@
 <template name="showMap">
   <div class="icon-bar four-up bottom">
-  <a class="item" href="/all">
-    <img class="main_link_img" src="/imgs/globe_64.png">
-    <label>All</label>
-  </a>
-  <a class="item" href="/">
-    <img class="main_link_img" src="/imgs/home_64.png">
-    <label>Main</label>
-  </a>
-  <a class="item" href="{{pathFor 'userProfile' _id='{{Meteor.user()._id}}' }}">
-    <img class="main_link_img" src="/imgs/man_64.png">
-    <label>Profile</label>
-  </a>
-  <a class="item capture">
-    <img class="main_link_img" src="/imgs/photo_64.png">
-    <label>Camera</label>
-  </a>
-</div>
+    <a class="item" href="/all">
+      <img class="main_link_img" src="/imgs/globe_64.png">
+      <label>All</label>
+    </a>
+    <a class="item" href="/">
+      <img class="main_link_img" src="/imgs/home_64.png">
+      <label>Main</label>
+    </a>
+    <a class="item" href="{{pathFor 'userProfile' _id='{{Meteor.user()._id}}' }}">
+      <img class="main_link_img" src="/imgs/man_64.png">
+      <label>Profile</label>
+    </a>
+    <a class="item capture">
+      <img class="main_link_img" src="/imgs/photo_64.png">
+      <label>Camera</label>
+    </a>
+  </div>
 
 
   <div class="row">
@@ -63,10 +63,10 @@
         </table>
       </div>
     </div>
- -->
+  -->
 
-      <div class="large-12 columns" id="map-canvas">
-      </div>
+    <div class="large-12 columns" id="map-canvas">
+    </div>
   </div>
 
 </template>
