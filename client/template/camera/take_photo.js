@@ -29,6 +29,7 @@ if (Meteor.isClient) {
             usersVotedUp: [],
             usersVotedDown: [],
             comments: [],
+            seen: [Meteor.user()._id],
             user: Meteor.user()
           },
           $addToSet: { seen: Meteor.user()._id }
