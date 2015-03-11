@@ -1,12 +1,12 @@
 <template name="showMap">
   <div class="icon-bar four-up bottom">
-    <a class="item" href="/all">
+    <a class="item" href="/map">
       <img class="main_link_img" src="/imgs/globe_64.png">
-      <label>All</label>
+      <label>Map</label>
     </a>
-    <a class="item" href="/">
+    <a class="item" href="/all">
       <img class="main_link_img" src="/imgs/home_64.png">
-      <label>Main</label>
+      <label>All</label>
     </a>
     <a class="item" href="{{pathFor 'userProfile' _id='{{Meteor.user()._id}}' }}">
       <img class="main_link_img" src="/imgs/man_64.png">
