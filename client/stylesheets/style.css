@@ -266,6 +266,13 @@ div#login-dropdown-list {
   background-color: #333333;
 }
 
+a.item:hover {
+  background-color: #333333;
+}
+
+.button:hover {
+  background-color: #333333;
+}
 
 /*
 #upvote_photo {
