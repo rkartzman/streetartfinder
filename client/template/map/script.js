@@ -1,19 +1,10 @@
-// var queryString = window.location.search.substring(1)
-
-// function parseForCoords(queryString){
-//   var coords = queryString.split("&")
-//   return coords.map(function(coord){
-//     return parseFloat(coord.match(/(\-)?\d+\.\d+/))
-//   })
-// }
-
-var mapster, map, marks, mark;
+var mapster, map, marks, mark, options, icon;
 Template.showMap.rendered = function () {
-  var lat = parseFloat(this.data.lat) 
-  var lng = parseFloat(this.data.lng)
+  var lat = parseFloat(this.data.lat);
+  var lng = parseFloat(this.data.lng);
   mapster = (function (window, google) {
-    if (lat && lng){
-      var options = {
+    if (lat && lng) {
+      options = {
         center: {
           lat: lat,
           lng: lng
@@ -22,7 +13,7 @@ Template.showMap.rendered = function () {
         disableDefaultUI: true
       };
     } else {
-      var options = {
+      options = {
         center: {
           lat: 40.7062502,
           lng: -74.00926679999999
@@ -33,15 +24,16 @@ Template.showMap.rendered = function () {
     }
 
     element = document.getElementById('map-canvas');
+
     map = new google.maps.Map(element, options);
 
     marks = [];
     var addMarker = function (lat, lng, photoId, seen) {
-      if($.inArray( Meteor.user()._id, seen )) {
-        var icon = '/imgs/marker-one.png'
+      if ($.inArray(Meteor.user()._id, seen)) {
+        icon = '/imgs/marker-one.png';
       } else {
-        var icon = '/imgs/marker-two.png'
-      };
+        icon = '/imgs/marker-two.png';
+      }
       mark = (new google.maps.Marker({
         id: photoId,
         position: {
