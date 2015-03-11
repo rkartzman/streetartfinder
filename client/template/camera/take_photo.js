@@ -30,7 +30,8 @@ if (Meteor.isClient) {
             usersVotedDown: [],
             comments: [],
             user_id: Meteor.user()._id
-          }
+          },
+          $addToSet: { seen: Meteor.user()._id }
         });
         Router.go('photoPage', {_id: newOne});
       });
