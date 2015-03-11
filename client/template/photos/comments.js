@@ -19,7 +19,7 @@ Template.comments.helpers({
   photoComments: function () {
     return this.comments;
   },
-  photoUser: function () {
-    return this.user.emails[0].address;
+  commenter: function() {
+    return (this.user.emails[0].address).substring(0, (this.user.emails[0].address).indexOf("@"))
   }
 });
