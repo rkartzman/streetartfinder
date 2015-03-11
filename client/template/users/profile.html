@@ -1,10 +1,25 @@
 <template name="userProfile">
-  <a id="delete-account" href="/">delete account</a>
-  <a id="logout" href="/">logout</a>
   <div>
-  	<h2>Welcome, {{username}}</h2>
+    <h2>Welcome, {{username}}</h2>
   </div>
-  {{#each userPhotos }}
-    {{>photoPage}} delete?
-  {{/each}}
+  <div id="test-links">
+    <a id="user-photos-check" href="#"><img src="/imgs/photo_64.png"></a>
+    <a id="user-been-there" href="#"><img src="/imgs/photo_64.png"></a>
+    <a id="user-manage-account" href="#"><img src="/imgs/photo_64.png"></a>
+  </div>
+  <div class="profile-photos">
+    {{#each userPhotos }}
+      {{>photoPage}}
+    {{/each}}
+  </div>
+  <div class="been-there-user">
+    {{#each beenTherePhotos }}
+      {{>photoPage}}
+      <a id="delete-photo-user" href="#">Delete Photo</a>
+    {{/each}}
+  </div>
+  <div class="manage-account">
+    <a id="delete-account" href="/">delete account</a>
+    <a id="logout" href="/">logout</a>
+  </div>
 </template>
