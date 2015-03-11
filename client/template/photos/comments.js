@@ -18,5 +18,8 @@ Template.comments.events({
 Template.comments.helpers({
   photoComments: function () {
     return this.comments;
+  },
+  photoUser: function() {
+    return this.user.emails[0].address
   }
 });
