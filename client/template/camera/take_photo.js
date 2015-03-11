@@ -31,8 +31,7 @@ if (Meteor.isClient) {
             comments: [],
             seen: [Meteor.user()._id],
             user: Meteor.user()
-          },
-          $addToSet: { seen: Meteor.user()._id }
+          }
         });
         Router.go('photoPage', {_id: newOne});
       });
