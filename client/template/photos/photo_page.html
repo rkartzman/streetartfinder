@@ -8,33 +8,32 @@
       </div>
     </div>
   </div>
-<div>
-<a href="/map?lat={{getLat}}&lng={{getLng}}">Tag on Map</a>
-</div>
+  <div>
+    <a href="/map?lat={{getLat}}&lng={{getLng}}">Tag on Map</a>
+  </div>
   {{#if caption}}
-  <div class="row">
-    <span class="secondary radius label">{{caption}}</span>
-  </div>
+    <div class="row">
+      <span class="secondary radius label">{{caption}}</span>
+    </div>
   {{else}}
-  <div class="row">
-    <span id="submit-caption-container" class="secondary radius label">{{> getCaption}}</span>
-  </div>
+    <div class="row">
+      <span id="submit-caption-container" class="secondary radius label">{{> getCaption}}</span>
+    </div>
   {{/if}}
 
-<a id="been-there" href="#">Been There</a>
+  <a id="been-there" href="#">Been There</a>
 
   <div class="row">
     <div id="photo-info" class="label small-6 columns">Posted by: {{getPoster}} with {{getVotes}} upvotes
     </div>
   </div>
-<div class="row">
+  <div class="row">
     <div class="small-6 columns voting">
       {{> upvoteForm}}
-      </div>
-      <div id="unvote" class="small-6 columns voting">
+    </div>
+    <div id="unvote" class="small-6 columns voting">
       {{> downvoteForm}}
     </div>
-    </div>
-
+  </div>
   {{> comments}}
 </template>

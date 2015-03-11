@@ -5,13 +5,13 @@
       <input type="hidden" name="photoId" value={{_id}}>
       <input class="button tiny" type="submit">
     </form>
-    </div>
-      {{#each comments}}
-      <div class="row">
-        <div class="label comments">
-          {{photoUser}}:
-          {{content}}
-        </div>
+  </div>
+  {{#each comments}}
+    <div class="row">
+      <div class="label comments">
+        {{photoUser}}:
+        {{content}}
       </div>
-      {{/each}}
+    </div>
+  {{/each}}
 </template>
