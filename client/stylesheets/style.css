@@ -170,11 +170,11 @@ table .top-needed {
   z-index: 0;
 }
 
-/*.icon-bar {
+.icon-bar.bottom {
   position: fixed;
   bottom: 0;
   z-index: 9;
-}*/
+}
 
 .button {
   background-color: #333333;
@@ -205,3 +205,74 @@ table .top-needed {
 .manage-account {
   display: none;
 }
+.secondary {
+  margin-top: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  max-width: 30%;
+}
+
+#submit-caption-container {
+  height: 100px;
+}
+
+#photo-info {
+  background-color: #333333;
+  font-size: 1.1em;
+  margin-top: 15px;
+  height: 30px;
+  width: 90.6%;
+  margin-left: 4.7%;
+  /*margin-right: ;*/
+}
+
+#voter {
+  margin-top: 15px;
+  max-height: 30px;
+}
+
+.voting {
+  width: 100%;
+  margin-top: 3px;
+}
+
+#unvote {
+  margin-top: -20px;
+}
+
+#login-dropdown-list {
+  margin-left: -95px;
+  max-width: 300px;
+  margin-top: 100px;
+}
+
+div#login-dropdown-list {
+  background-color: #333333;
+  color: white;
+  border: none;
+}
+
+#add_comment {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 90%;
+}
+
+.comments {
+  background-color: #333333;
+}
+
+
+/*
+#upvote_photo {
+  display: block;
+
+}
+
+#downvote_photo {
+
+}*/
