@@ -67,7 +67,7 @@ if (Photos.find().count() === 0) {
     // user_id: Users.findOne({ name: 'Ivan' })._id
   });
 
-    Photos.insert({
+  Photos.insert({
     caption: 'bacon',
     url: 'http://www.sunsetcove-resort.com/images/08/sunset-loons.jpg',
     coordinates: { lat: '41.706249', lng: '-74.00925289999999'},
@@ -76,115 +76,10 @@ if (Photos.find().count() === 0) {
     downvotes: 0,
     usersVotedUp: [],
     usersVotedDown: [],
-      seen: []
+    seen: []
   });
 
-    Photos.insert({
-    caption: 'bacon',
-    url: 'imgs/vail.png',
-    coordinates: { lat: '41.706249', lng: '-74.00925289999999'},
-    comments: [],
-    upvotes: 0,
-    downvotes: 0,
-    usersVotedUp: [],
-      seen: []
-  });
-
-    Photos.insert({
-    caption: 'bubbly',
-    url: 'http://images.boomsbeat.com/data/images/full/1246/36-jpg.jpg',
-    coordinates: { lat: '42.706249', lng: '-74.00925289999999'},
-    comments: [],
-    upvotes: 0,
-    downvotes: 0,
-    usersVotedUp: [],
-    usersVotedDown: [],
-      seen: []
-    // user_id: Users.findOne({ name: 'Ivan' })._id
-  });
-
-    Photos.insert({
-    caption: 'banksy',
-    url: 'http://www.sunsetcove-resort.com/images/08/sunset-loons.jpg',
-    coordinates: { lat: '41.706255', lng: '-74.00925289999999'},
-    comments: [],
-    upvotes: 0,
-    downvotes: 0,
-    usersVotedUp: [],
-    usersVotedDown: [],
-      seen: []
-  });
-
-    Photos.insert({
-    caption: 'crispy bacon',
-    url: 'imgs/vail.png',
-    coordinates: { lat: '41.706234', lng: '-74.00925289999999'},
-    comments: [],
-    upvotes: 0,
-    downvotes: 0,
-    usersVotedUp: [],
-      seen: []
-  });
-
-      Photos.insert({
-    caption: 'bacon',
-    url: 'imgs/vail.png',
-    coordinates: { lat: '41.706249', lng: '-74.00925289999999'},
-    comments: [],
-    upvotes: 0,
-    downvotes: 0,
-    usersVotedUp: [],
-      seen: []
-  });
-
-    Photos.insert({
-    caption: 'bubbly',
-    url: 'http://images.boomsbeat.com/data/images/full/1246/36-jpg.jpg',
-    coordinates: { lat: '42.706249', lng: '-74.00925289999999'},
-    comments: [],
-    upvotes: 0,
-    downvotes: 0,
-    usersVotedUp: [],
-    usersVotedDown: [],
-      seen: []
-    // user_id: Users.findOne({ name: 'Ivan' })._id
-  });
-
-    Photos.insert({
-    caption: 'banksy',
-    url: 'http://www.sunsetcove-resort.com/images/08/sunset-loons.jpg',
-    coordinates: { lat: '41.706255', lng: '-74.00925289999999'},
-    comments: [],
-    upvotes: 0,
-    downvotes: 0,
-    usersVotedUp: [],
-    usersVotedDown: [],
-      seen: []
-  });
-
-    Photos.insert({
-    caption: 'crispy bacon',
-    url: 'imgs/vail.png',
-    coordinates: { lat: '41.706234', lng: '-74.00925289999999'},
-    comments: [],
-    upvotes: 0,
-    downvotes: 0,
-    usersVotedUp: [],
-      seen: []
-  });
-
-       Photos.insert({
-    caption: 'crispy bacon',
-    url: 'imgs/vail.png',
-    coordinates: { lat: '41.706234', lng: '-74.00925289999999'},
-    comments: [],
-    upvotes: 0,
-    downvotes: 0,
-    usersVotedUp: [],
-      seen: []
-  });
-
-      Photos.insert({
+  Photos.insert({
     caption: 'bacon',
     url: 'imgs/vail.png',
     coordinates: { lat: '41.706249', lng: '-74.00925289999999'},
@@ -195,7 +90,7 @@ if (Photos.find().count() === 0) {
     seen: []
   });
 
-    Photos.insert({
+  Photos.insert({
     caption: 'bubbly',
     url: 'http://images.boomsbeat.com/data/images/full/1246/36-jpg.jpg',
     coordinates: { lat: '42.706249', lng: '-74.00925289999999'},
@@ -208,7 +103,7 @@ if (Photos.find().count() === 0) {
     // user_id: Users.findOne({ name: 'Ivan' })._id
   });
 
-    Photos.insert({
+  Photos.insert({
     caption: 'banksy',
     url: 'http://www.sunsetcove-resort.com/images/08/sunset-loons.jpg',
     coordinates: { lat: '41.706255', lng: '-74.00925289999999'},
@@ -220,7 +115,112 @@ if (Photos.find().count() === 0) {
     seen: []
   });
 
-    Photos.insert({
+  Photos.insert({
+    caption: 'crispy bacon',
+    url: 'imgs/vail.png',
+    coordinates: { lat: '41.706234', lng: '-74.00925289999999'},
+    comments: [],
+    upvotes: 0,
+    downvotes: 0,
+    usersVotedUp: [],
+    seen: []
+  });
+
+  Photos.insert({
+    caption: 'bacon',
+    url: 'imgs/vail.png',
+    coordinates: { lat: '41.706249', lng: '-74.00925289999999'},
+    comments: [],
+    upvotes: 0,
+    downvotes: 0,
+    usersVotedUp: [],
+    seen: []
+  });
+
+  Photos.insert({
+    caption: 'bubbly',
+    url: 'http://images.boomsbeat.com/data/images/full/1246/36-jpg.jpg',
+    coordinates: { lat: '42.706249', lng: '-74.00925289999999'},
+    comments: [],
+    upvotes: 0,
+    downvotes: 0,
+    usersVotedUp: [],
+    usersVotedDown: [],
+    seen: []
+    // user_id: Users.findOne({ name: 'Ivan' })._id
+  });
+
+  Photos.insert({
+    caption: 'banksy',
+    url: 'http://www.sunsetcove-resort.com/images/08/sunset-loons.jpg',
+    coordinates: { lat: '41.706255', lng: '-74.00925289999999'},
+    comments: [],
+    upvotes: 0,
+    downvotes: 0,
+    usersVotedUp: [],
+    usersVotedDown: [],
+    seen: []
+  });
+
+  Photos.insert({
+    caption: 'crispy bacon',
+    url: 'imgs/vail.png',
+    coordinates: { lat: '41.706234', lng: '-74.00925289999999'},
+    comments: [],
+    upvotes: 0,
+    downvotes: 0,
+    usersVotedUp: [],
+    seen: []
+  });
+
+  Photos.insert({
+    caption: 'crispy bacon',
+    url: 'imgs/vail.png',
+    coordinates: { lat: '41.706234', lng: '-74.00925289999999'},
+    comments: [],
+    upvotes: 0,
+    downvotes: 0,
+    usersVotedUp: [],
+    seen: []
+  });
+
+  Photos.insert({
+    caption: 'bacon',
+    url: 'imgs/vail.png',
+    coordinates: { lat: '41.706249', lng: '-74.00925289999999'},
+    comments: [],
+    upvotes: 0,
+    downvotes: 0,
+    usersVotedUp: [],
+    seen: []
+  });
+
+  Photos.insert({
+    caption: 'bubbly',
+    url: 'http://images.boomsbeat.com/data/images/full/1246/36-jpg.jpg',
+    coordinates: { lat: '42.706249', lng: '-74.00925289999999'},
+    comments: [],
+    upvotes: 0,
+    downvotes: 0,
+    usersVotedUp: [],
+    usersVotedDown: [],
+    seen: []
+    // user_id: Users.findOne({ name: 'Ivan' })._id
+  });
+
+  Photos.insert({
+    caption: 'banksy',
+    url: 'http://www.sunsetcove-resort.com/images/08/sunset-loons.jpg',
+    coordinates: { lat: '41.706255', lng: '-74.00925289999999'},
+    comments: [],
+    upvotes: 0,
+    downvotes: 0,
+    usersVotedUp: [],
+    usersVotedDown: [],
+    seen: []
+  });
+
+  Photos.insert({
     caption: 'crispy bacon',
     url: 'imgs/vail.png',
     coordinates: { lat: '41.706234', lng: '-74.00925289999999'},
