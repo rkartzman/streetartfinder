@@ -18,3 +18,9 @@ Template.userProfile.events({
     Router.go('/')
   }
 })
+
+Template.userProfile.helpers({
+  username: function(){
+    return Meteor.user().emails[0].address
+  }
+})
