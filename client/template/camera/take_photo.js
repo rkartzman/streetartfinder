@@ -7,7 +7,7 @@ Template.takePhoto.helpers({
 Geolocation.latLng();
 
 if (Meteor.isClient) {
-  Template.takePhoto.events({
+  Template.showMap.events({
     'click .capture': function () {
       MeteorCamera.getPicture({}, function (error, data) {
         Session.set('photo', data);
