@@ -1,10 +1,17 @@
 <template name="comments">
+  <div class="row">
     <form id="add_comment">
       <input type="text" name="comment" placeholder="Add a comment">
       <input type="hidden" name="photoId" value={{_id}}>
-      <input type="submit">
+      <input class="button tiny" type="submit">
     </form>
+    </div>
       {{#each comments}}
-        {{content}}
+      <div class="row">
+        <div class="label comments">
+          {{photoUser}}:
+          {{content}}
+        </div>
+      </div>
       {{/each}}
 </template>
