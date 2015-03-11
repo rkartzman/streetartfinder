@@ -10,7 +10,8 @@ Template.showMap.rendered = function () {
           lng: lng
         },
         zoom: 14,
-        disableDefaultUI: true
+        disableDefaultUI: true,
+        mapTypeId: google.maps.MapTypeId.HYBRID
       };
     } else {
       options = {
@@ -19,7 +20,8 @@ Template.showMap.rendered = function () {
           lng: -74.00926679999999
         },
         zoom: 14,
-        disableDefaultUI: true
+        disableDefaultUI: true,
+        mapTypeId: google.maps.MapTypeId.HYBRID
       };
     }
 
