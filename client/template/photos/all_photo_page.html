@@ -1,25 +1,25 @@
 <template name="allPhotoPage">
 
-    <a class="button tiny" href="/map">Back</a>
+  <a class="button tiny" href="/map">Back</a>
 
   <div class="row">
     <div class="small-12 columns">
       <div id="mostRecentDiv">
-       <a href="/photos/{{lastPhoto._id}}"><img src="{{lastPhoto.url}}" class="main-preview"></a>
-     </div>
-   </div>
- </div>
-
- <div class="photo-belt-main">
-  <div class="row">
-    <div class="photo-belt-container">
-      <div class="eachPhotoBelt">
-        {{#each photos}}
-        {{>photoBelt}}
-        {{/each}}
+        <a href="/photos/{{lastPhoto._id}}"><img src="{{lastPhoto.url}}" class="main-preview"></a>
       </div>
     </div>
   </div>
-</div>
+
+  <div class="photo-belt-main">
+    <div class="row">
+      <div class="photo-belt-container">
+        <div class="eachPhotoBelt">
+          {{#each photos}}
+            {{>photoBelt}}
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
