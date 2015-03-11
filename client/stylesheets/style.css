@@ -1,12 +1,10 @@
-/*html {
-  height: 100%;
+html{
+    min-height:100%;
+    position:relative
 }
-
-body {
-  height: 100%;
-  padding:0;
-  margin: 0;
-}*/
+body{
+    height:100%
+}
 
 #map-canvas {
   margin-top: -1px;
@@ -24,11 +22,15 @@ body {
 }
 */
 
-body {
-  /*padding-top: 105px;
-  padding-right: 125px;
-  margin-left: -85px;
-  margin-top: 20px;*/
+.main-bg {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  overflow:hidden;
+  z-index:-1;
+  background-color: #333;
   background: url("https://fc07.deviantart.net/fs38/i/2009/003/f/1/Banksy___girl_and_balloon_by_picture_frame.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,11 +38,24 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   width: 100% !important;
-  z-index: 0;
+  /*z-index: 0;*/
   /*background-size: cover;
   height: 450px;
   width: 305px;
   position: left;*/
+}
+
+.login-page {
+  /*display: block;*/
+  z-index: 1;
+}
+
+.button {
+  border-radius: 5px;
+}
+
+input.button {
+ border-radius: 5px;
 }
 
 
@@ -115,6 +130,7 @@ table .top-needed {
   width: 100%;
   height: auto;
   margin-top: 5%;
+  /*border: 5px double #FFF;*/
 }
 
 .eachPhotoBelt {
@@ -138,6 +154,7 @@ table .top-needed {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
+  /*border: 5px ridge gray;*/
 }
 
 .photo-belt-main {
@@ -215,10 +232,6 @@ table .top-needed {
   max-width: 30%;
 }
 
-#submit-caption-container {
-  height: 100px;
-}
-
 #photo-info {
   background-color: #333333;
   font-size: 1.1em;
@@ -278,12 +291,62 @@ a.item:hover {
   background-color: #0D7093;
 }
 
-/*
-#upvote_photo {
-  display: block;
-
+form#add_caption {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#downvote_photo {
+#submit-caption-container {
+  height: 100px;
+}
 
-}*/
+#submit-caption {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#been-there {
+  width: 100%;
+  margin-bottom: 1px;
+  /*background-color: purple;*/
+  /*color: red;*/
+}
+
+#been-there:hover {
+  background-color: #0D7093;
+}
+
+#tag-on-map {
+  width: 100%;
+  /*margin-top: -70px;*/
+}
+@font-face {
+  font-family: street;
+  src: url(street.ttf);
+}
+
+.each-comment {
+  border-top: 1px solid black;
+  width: 80%;
+  margin-left: 9%;
+  margin-bottom: 5px;
+  padding-top: 5px;
+}
+
+.username {
+  font-family: street;
+  font-size: 1.3em;
+}
+
+body {
+  background-color: wheat;
+}
+
+.welcome {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}
