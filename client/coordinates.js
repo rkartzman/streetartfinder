@@ -1,3 +1,3 @@
-getCoordinates = function(){
+getCoordinates = function () {
   return Geolocation.latLng();
 };
