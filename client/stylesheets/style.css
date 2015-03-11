@@ -274,6 +274,10 @@ a.item:hover {
   background-color: #333333;
 }
 
+.button.tiny.voting:hover {
+  background-color: #0D7093;
+}
+
 /*
 #upvote_photo {
   display: block;
