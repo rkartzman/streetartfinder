@@ -31,7 +31,7 @@ Template.showMap.rendered = function () {
 
     marks = [];
     var addMarker = function (lat, lng, photoId, seen) {
-      if ($.inArray(Meteor.user()._id, seen)) {
+      if ($.inArray(Meteor.user()._id, seen) === -1) {
         icon = '/imgs/marker-one.png';
       } else {
         icon = '/imgs/marker-two.png';
