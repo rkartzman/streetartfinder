@@ -1,6 +1,9 @@
 Template.userProfile.helpers({
   userPhotos: function () {
     return Photos.find({user_id: Meteor.user()._id});
+  },
+  userPhotos2: function() {
+    return Photos.find({user: Meteor.user()});
   }
 });
 
