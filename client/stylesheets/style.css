@@ -43,7 +43,30 @@ body {
   overflow:hidden;
   z-index:-1;
   background-color: #333;
-  background: url("https://fc07.deviantart.net/fs38/i/2009/003/f/1/Banksy___girl_and_balloon_by_picture_frame.jpg");
+  background: url("/imgs/ballon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: 100% !important;
+  /*z-index: 0;*/
+  /*background-size: cover;
+  height: 450px;
+  width: 305px;
+  position: left;*/
+}
+
+.camera-bg {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  overflow:hidden;
+  z-index:-1;
+  background-color: #333;
+  background: url("/imgs/mario.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
@@ -70,6 +93,15 @@ input.button {
  border-radius: 5px;
 }
 
+#delete-account {
+  max-width: 40%;
+  margin-left: 20px;
+}
+
+#logout {
+  max-width: 40%;
+  margin-right: 20px;
+}
 
 /*
 #our-logo {
@@ -142,7 +174,7 @@ table .top-needed {
   width: 278px;
   max-height: 3%;
   margin-top: -7px;
-  /*border: 5px double #FFF;*/
+  border: 5px ridge #d6d6d6;
 }
 
 .eachPhotoBelt {
@@ -228,6 +260,7 @@ table .top-needed {
 #test-links {
   font-size: 50px;
   text-align: center;
+  margin-top: 30px;
 }
 
 .profile-photos {
@@ -240,6 +273,8 @@ table .top-needed {
 
 .manage-account {
   display: none;
+  /*margin-left: 65px;*/
+  margin-top: 30px;
 }
 .secondary {
   margin-top: 5px;
@@ -368,7 +403,13 @@ form#add_caption {
 
 .username {
   font-family: street;
-  font-size: 2em;
+  font-size: 1.3em;
+  margin-left: 130px;
+}
+
+.username-main {
+  font-family: street;
+  font-size: 3em;
   margin-left: 130px;
 }
 
@@ -412,7 +453,8 @@ html {
 }
 
 .commment {
-  font-size: 1.5em;
+  font-size: 1.3em;
+  margin-left: -130px;
 }
 
 .caption {
@@ -421,4 +463,38 @@ html {
   text-align: center;
   font-family: street;
   font-size: 2em;
+}
+
+.capture {
+  max-width: 50%;
+  margin-left: 100px;
+  margin-top: 390px;
+}
+
+#welcome-header {
+  margin-top: -23px;
+}
+
+#user-photos-check {
+  font-family: street;
+  font-size: 0.4em;
+  color: #FFFFFF;
+  max-width: 30%;
+  margin: 5px;
+}
+
+#user-been-there {
+  font-family: street;
+  font-size: 0.4em;
+  color: #FFFFFF;
+  max-width: 30%;
+  margin: 5px;
+}
+
+#user-manage-account {
+  font-family: street;
+  font-size: 0.4em;
+  color: #FFFFFF;
+  max-width: 30%;
+  margin: 5px;
 }

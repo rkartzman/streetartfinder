@@ -4,34 +4,38 @@
       <a href="/map" class="button tiny">Map</a>
     </div>
   </div>
-  <div class="row">
+  <div class="row" id="welcome-header">
     <div class="small-12 columns welcome">
-    <span id="wel">Welcome</span>
+      <span id="wel">Welcome</span>
     </div>
     <div class="row">
       <div class="small-12 columns">
-        <span class="username">{{username}}</span>
+        <span class="username-main">{{username}}</span>
       </div>
     </div>
   </div>
   <div id="test-links">
-    <a id="user-photos-check" href="#"><img src="/imgs/photo_64.png"></a>
-    <a id="user-been-there" href="#"><img src="/imgs/photo_64.png"></a>
-    <a id="user-manage-account" href="#"><img src="/imgs/photo_64.png"></a>
+    <div class="row">
+      <a id="user-photos-check" class="button small-4 columns" href="#">My photos</a>
+      <a id="user-been-there" class="button small-4 columns" href="#">Been there</a>
+      <a id="user-manage-account" class="button small-4 columns" href="#">Manage account</a>
+    </div>
   </div>
   <div class="profile-photos">
     {{#each userPhotos2 }}
-      {{>photoPage}}
-      <a id="delete-photo-user" href="#">Delete Photo</a>
+    {{>photoPage}}
+    <a id="delete-photo-user" href="#">Delete Photo</a>
     {{/each}}
   </div>
   <div class="been-there-user">
     {{#each beenTherePhotos }}
-      {{>photoPage}}
+    {{>photoPage}}
     {{/each}}
   </div>
-  <div class="manage-account">
-    <a id="delete-account" href="/">delete account</a>
-    <a id="logout" href="/">logout</a>
+  <div class="row">
+    <div class="manage-account">
+      <a class="button tiny small-6 columns" id="delete-account" href="/">delete account</a>
+      <a id="logout" class="button tiny small-6 columns" href="/">logout</a>
+    </div>
   </div>
 </template>
