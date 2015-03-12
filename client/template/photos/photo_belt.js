@@ -8,6 +8,7 @@ Template.photoBelt.events({
 	'click': function(event){
 		event.preventDefault();
 		var cloned = $(event.target).parent().clone()
+    $(cloned).children('img').eq(0).removeClass("allPhotos").addClass("main-preview")
 		$('#mostRecentDiv').html(cloned).toggleClass("mostRecentPhoto")
 	}
 });

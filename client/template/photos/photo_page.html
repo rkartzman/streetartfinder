@@ -1,6 +1,8 @@
 <template name="photoPage">
-  <a class="button tiny" href="/all">All</a>
-  <a class="button tiny" href="/map">Map</a>
+  <div class="navbar-photo-page">
+    <a class="button tiny" href="/all">All</a>
+    <a class="button tiny" href="/map">Map</a>
+  </div>
   <!-- <a href="/following">Good Art.</a> -->
   <div class="row">
     <div class="small-12 columns">
@@ -12,7 +14,7 @@
 
   {{#if caption}}
   <div class="row">
-    <span class="secondary radius label">{{caption}}</span>
+    <span class="small-12 columns caption">{{caption}}</span>
   </div>
   {{else}}
   <div class="row">
@@ -26,7 +28,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="small-6 columns voting">
+    <div id="onvote" class="small-6 columns voting">
       {{> upvoteForm}}
     </div>
     <div id="unvote" class="small-6 columns voting">
@@ -34,14 +36,12 @@
     </div>
   </div>
   <div class="row">
-    <div class="small-6 columns voting">
-      <a class="button tiny" id="been-there" href="#">Been There</a>
+    <!-- <div id="been-there" class="small-6 columns voting"> -->
+      <a id="been-there" class="small-6 columns voting button tiny" href="#">Been There</a>
+    <!-- </div> -->
+    <!-- <div id="tag-on-map" class="small-6 columns voting"> -->
+      <a id="tag-on-map" class="small-6 columns voting button tiny" href="/map?lat={{getLat}}&lng={{getLng}}">Tag on Map</a>
     </div>
-  </div>
-  <div class="row">
-    <div class="small-6 columns voting">
-      <a id="tag-on-map" class="button tiny" href="/map?lat={{getLat}}&lng={{getLng}}">Tag on Map</a>
-    </div>
-  </div>
+  <!-- </div> -->
   {{> comments}}
 </template>

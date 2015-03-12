@@ -1,7 +1,17 @@
 <template name="userProfile">
   <div class="row">
-    <div class="small-6 columns welcome">
-    Welcome, <span class="username">{{username}}</span>
+    <div class="profile-navbar">
+      <a href="/map" class="button tiny">Map</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns welcome">
+    <span id="wel">Welcome</span>
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
+        <span class="username">{{username}}</span>
+      </div>
     </div>
   </div>
   <div id="test-links">
@@ -12,12 +22,12 @@
   <div class="profile-photos">
     {{#each userPhotos }}
       {{>photoPage}}
+      <a id="delete-photo-user" href="#">Delete Photo</a>
     {{/each}}
   </div>
   <div class="been-there-user">
     {{#each beenTherePhotos }}
       {{>photoPage}}
-      <a id="delete-photo-user" href="#">Delete Photo</a>
     {{/each}}
   </div>
   <div class="manage-account">

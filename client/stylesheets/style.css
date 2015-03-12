@@ -7,7 +7,7 @@ body{
 }
 
 #map-canvas {
-  margin-top: -1px;
+  margin-top: 5px;
   border: 2px solid #007F7F;
   border-radius: 5px;
   height: 695px;
@@ -21,6 +21,18 @@ body{
   width: 300px;
 }
 */
+
+body {
+  background-color: #d3d3d3;
+  z-index:-1;
+  /*background: url("");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: 100% !important;
+}
 
 .main-bg {
   position:absolute;
@@ -127,9 +139,9 @@ table .top-needed {
   display:block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  height: auto;
-  margin-top: 5%;
+  width: 278px;
+  max-height: 3%;
+  margin-top: -7px;
   /*border: 5px double #FFF;*/
 }
 
@@ -154,6 +166,13 @@ table .top-needed {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
+  /*display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 278px;
+  max-height: 3%;
+  margin-top: -7px;*/
+  /*border: 5px double #FFF;*/
   /*border: 5px ridge gray;*/
 }
 
@@ -253,7 +272,12 @@ table .top-needed {
 }
 
 #unvote {
-  margin-top: -20px;
+  /*margin-top: -20px;*/
+  width: 50%;
+}
+
+#onvote {
+  width: 50%;
 }
 
 #login-dropdown-list {
@@ -308,10 +332,13 @@ form#add_caption {
 }
 
 #been-there {
-  width: 100%;
-  margin-bottom: 1px;
+  width: 40.5%;
+  font-size: 1em;
+  /*margin-bottom: 1px;*/
   /*background-color: purple;*/
   /*color: red;*/
+  margin-top: -15px;
+  margin-left: 15px;
 }
 
 #been-there:hover {
@@ -319,9 +346,13 @@ form#add_caption {
 }
 
 #tag-on-map {
-  width: 100%;
+  font-size: 1em;
+  width: 40.5%;
+  margin-top: -15px;
+  margin-right: 15px;
   /*margin-top: -70px;*/
 }
+
 @font-face {
   font-family: street;
   src: url(street.ttf);
@@ -337,16 +368,57 @@ form#add_caption {
 
 .username {
   font-family: street;
-  font-size: 1.3em;
-}
-
-body {
-  background-color: wheat;
+  font-size: 2em;
+  margin-left: 130px;
 }
 
 .welcome {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  margin-top: 25px;
   text-align: center;
+}
+
+#wel {
+  font-size: 1.4em;
+}
+
+a.login-link-text {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+a#login-name-link {
+ text-decoration: none;
+ color: #FFFFFF;
+}
+
+html {
+  margin-top: 20px;
+}
+
+.navbar-photo-page {
+  margin-left: 13px;
+  margin-top: 3px;
+}
+
+#like {
+  font-size: 1em;
+}
+
+#not-upvote {
+ font-size: 1em;
+}
+
+.commment {
+  font-size: 1.5em;
+}
+
+.caption {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: street;
+  font-size: 2em;
 }

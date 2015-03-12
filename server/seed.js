@@ -230,6 +230,17 @@ if (Photos.find().count() === 0) {
     usersVotedUp: [],
     seen: []
   });
+
+  Photos.insert({
+    caption: 'iPHONE',
+    url: 'imgs/sq.jpg',
+    coordinates: { lat: '41.706234', lng: '-74.00925289999999'},
+    comments: [],
+    upvotes: 0,
+    downvotes: 0,
+    usersVotedUp: [],
+    seen: []
+  });
 }
 
 
